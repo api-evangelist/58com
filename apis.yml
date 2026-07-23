@@ -1,8 +1,25 @@
 aid: 58com
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/58com.png
 name: 58.com
-description: '58.com is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: '58.com (58同城, "58 Tongcheng") is China''s largest online classifieds and local-services
+  marketplace, often called the "Chinese Craigslist." Founded in 2005 and headquartered in Beijing,
+  it operates listings across recruitment and jobs, real estate and housing (Anjuke), used goods
+  (Zhuanzhuan), automobiles, local services, and yellow-pages business directories. Formerly listed
+  on the NYSE (WUBA), it was taken private in 2020 by a Warburg Pincus / General Atlantic consortium.
+  Its 58 Open Platform (open.58.com) exposes payment, recruitment/jobs data, housing, local-service
+  information, security risk-control, marketing, and social capabilities to approved third-party
+  partners via reviewed developer accounts and API keys. Backed historically by DCM Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/58com/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,6 +33,12 @@ modified: '2026-07-17'
 tags:
 - Company
 - Consumer
+- Classifieds
+- Marketplace
+- Real Estate
+- Recruitment
+- Local Services
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/58com-domain-security.yml
+- type: DeveloperPortal
+  url: https://open.58.com/
 - type: Website
-  url: http://bj.58.com/
+  url: https://www.58.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
